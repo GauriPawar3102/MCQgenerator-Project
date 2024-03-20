@@ -1,0 +1,33 @@
+[
+  {
+    "id":0,
+    "name": "hugging face model_ver1",
+    "type": "string",
+    "class": "Base Model"
+  },
+  {
+    "id":1,
+    "name": "hugging face model_ver2",
+    "type": "bool",
+    "class": "Raw Model"
+  },
+  {
+    "id":3,
+    "name": "hugging face model_ver3",
+    "type": "int",
+    "class": "Data Model"
+  },
+  {
+    "id":4,
+    "name": "hugging face model_ver4",
+    "type": "double",
+    "class": "Data Processing Model"
+  },
+  {
+    "id":5,
+    "name": "hugging face model_ver5",
+    "type": "float",
+    "class": "Ultimate data model"
+  }
+]
+    
