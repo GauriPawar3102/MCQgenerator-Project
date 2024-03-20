@@ -1,0 +1,36 @@
+[
+  {
+    "id":1
+    "class_type": "class"
+    "flag": "False"
+    "output_type": "txt"
+    "invoice": "Active"
+  },
+  {
+    "id":2
+    "class_type": "structure"
+    "flag": "True"
+    "output_type": "pdf"
+    "invoice": "Not Active"
+  },
+  {
+    "id":3
+    "class_type": "enum"
+    "flag": "False"
+    "output_type": "txt"
+    "invoice": "Active"
+  },
+  {
+    "id":4
+    "class_type": "array"
+    "flag": "True"
+    "output_type": "docx file"
+    "invoice": "Not Active"
+  },
+  {
+    "id":5
+    "class_type": "union"
+    "flag": "True"
+    "output_type": "rawppt"
+    "invoice": "Not Active"
+  },
