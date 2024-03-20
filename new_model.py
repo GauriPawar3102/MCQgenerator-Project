@@ -38,3 +38,15 @@ for i in range(scores.shape[0]):
     l = config.id2label[ranking[i]]
     s = scores[ranking[i]]
     print(f"{i+1}) {1} {np.round(float(s),4)}")
+
+
+trainer=Trainer(
+    model=None,
+    args=Training_args,
+    train_dataset=small_train_dataset,
+    eval_dataset=small_eval_dataset,
+    compute_metrics=train_compute_metrics
+    tokenizer=train_tokenizer,
+    n_trials=100
+    )
+
