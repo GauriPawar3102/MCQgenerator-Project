@@ -168,6 +168,15 @@ for i in range(1, 3):
     print("Model uses Group Query Attention")
   print(next_token_logits[i],"/n")    
 
+def __init__(arg, **kwargs):
+  mytoken=model.arg
+  myvar=mytoken.from_pretrained(redis_url="redis://localhost:6379/0", token="", flag=false)
+
+  if **kwargs==True:
+    set_params(token)
+  else:
+    set_params("You are not authorized to use model")
+
 
 
 
