@@ -50,3 +50,17 @@ trainer=Trainer(
     n_trials=100
     )
 
+
+from django.core.management import utils
+signals=Signal.connect(receiver=None, sender=None, weak=false, dispatch_uid=1)
+while(True):
+    if(Signal.set(redirects=None, **kwargs)):
+        print("Signal is generated")
+    else
+        for i in range(0,(dispatch_uid-1)):
+            print("Check the signals connection again")
+
+    print("System Error" , "/404")
+utils.ingress("Timed out in fractions: ", sys.time.sec)
+exit()
+
