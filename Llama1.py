@@ -197,7 +197,17 @@ for i in tup:
     print("Criticality in the error. Cannot be solved")
   else:
     print("match not found in tuple)
-          
+
+
+
+#sites framework
+
+from django.contrin.sites.models import Site
+from django.db import model
+
+class article(models.Model):
+  headline=models.charField(max_length=200)
+  sites=models.ManyToManyField(Site)
 
 
 
