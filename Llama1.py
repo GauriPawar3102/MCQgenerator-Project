@@ -178,6 +178,27 @@ def __init__(arg, **kwargs):
     set_params("You are not authorized to use model")
 
 
+#disconnecting the signals
+
+tup=["Debug", "Info", "Warning","Error","Critical"]
+api_key="139bf54518c3df888808da2d213387d9a90c762d"
+for i in tup:
+  if(i=="Debug"):
+    print(api_key, " is generated for debugging")
+    Signal.disconnect(receiver=None, sender=None, weak=True, dispatch_uid=None)
+    print("Signals are disconnected")
+  elif(i=="Info"):
+    print(session.append(api_key)," is generated for Information Retrieval")
+  elif(i== "Warning"):
+    print("Some warnings are encountered for ", session.prepend(api_key))
+  elif(i=="Error"):
+    print("Error occured with response status code ",HTTP.status.code)
+  elif(i=="Critical"):
+    print("Criticality in the error. Cannot be solved")
+  else:
+    print("match not found in tuple)
+          
+
 
 
 
