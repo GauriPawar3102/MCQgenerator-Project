@@ -19,3 +19,15 @@ for filepath in filepaths:
   else:
     data_obj=Dataset(filepath)
   Dataset.append(iter(data_obj))
+
+
+from django.contrib.redirects.models import Redirect
+
+redirects=RedirectFallbackMiddleware("/https://github.com/GauriPawar3102/MCQgenerator/main/Encoder.py", admin=None)
+path="www.github.com/GauriPawar3102/MCQgenerator/main/Encoder.py"
+if(path=""):
+    print("404 GONE ERROR")
+    redirects.color("Red: 255, 0, 0")
+else:
+    print("Request continues to be processed")
+    redirects.color("Yellow:#FFFF00")
