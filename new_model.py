@@ -1,4 +1,4 @@
-from transformers import AutoModelForSequenceClassification
+﻿from transformers import AutoModelForSequenceClassification
 from transformers import TFAutoModelForSequenceClassification
 from transformers import AutoTokenizer, AutoConfig
 import numpy as np
@@ -64,3 +64,10 @@ while(True):
 utils.ingress("Timed out in fractions: ", sys.time.sec)
 exit()
 
+import django.utils.encoding
+ 
+def my_string(String):
+    smart_str(s=str, encoding="utf-8", strings_only=false, errors="strict")
+    force_str(s=str, encoding="utf-8", strings_only=false, errors="strict")
+    smart_bytes(s=str, encoding="utf-8", strings_only=false, errors="strict")
+my_string("rising technology")

@@ -10,7 +10,7 @@ token_id[5]={'0.1s_rms', '0.3s_ms', '0.5s_sin', '0.7s_cos', '0.9s_tan'}
 for i in range(0,5):
   print(i+1, "token id is: ",token_id[i])
 
-my_dict={1: "subparams", 2:"analyzer", 3:"varinats", 4: "words", 5:"mutation" , 6:"patterns", 7:"replacements"}
+my_dict={1: "subparams", 2:"analyzer", 3:"variants", 4: "words", 5:"mutation" , 6:"patterns", 7:"replacements"}
   print(my_dict)
 
 #creating cache instance
@@ -51,7 +51,7 @@ for i in range(0,100):
 print(my_token)
 
 
-def inputs_embeds(torch.FloatTensor of shape (batch_size, sequence_length, hidden_size):
+def inputs_embeds(torch.FloatTensor of shape (batch_size, sequence_length, hidden_size)):
   torch.batch_size=batch_size
   torch. sequence_length= sequence_length
   torch.hidden_size=hidden_size
@@ -127,7 +127,7 @@ model_inputs=tokenizer(prompt,return_tensors="pt").to("cuda:0")
 
 output=model_generate(**model_inputs)
 
-print(tokenizer(decode(output[0], skip_special_tokens=True)
+print(tokenizer(decode(output[0], skip_special_tokens=True)))
 
 hidden_state=0
 def hidden_function(hidden_state)
@@ -196,13 +196,13 @@ for i in tup:
   elif(i=="Critical"):
     print("Criticality in the error. Cannot be solved")
   else:
-    print("match not found in tuple)
+    print("match not found in tuple")
 
 
 
 #sites framework
 
-from django.contrin.sites.models import Site
+from django.contrib.sites.models import Site
 from django.db import model
 
 class article(models.Model):
