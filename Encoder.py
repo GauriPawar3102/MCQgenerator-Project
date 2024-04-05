@@ -31,3 +31,8 @@ if(path=""):
 else:
     print("Request continues to be processed")
     redirects.color("Yellow:#FFFF00")
+
+#transactions
+from django.db import migrations
+class Migration(migrations.Migration):
+    atomic = False
