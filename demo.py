@@ -4,7 +4,7 @@
 import logging  
 logging.basicConfig(filename ='example.log', level = logging.INFO)  
     
-    
+#Logger function to find the logs of arguments  
 def logger(func):  
     def log_func(*args):  
         logging.info(  
@@ -13,10 +13,10 @@ def logger(func):
     # Necessary for closure to work (returning WITHOUT parenthesis)  
     return log_func                
     
-def add(x, y):  
+def add(x, y):           #adding the values
     return x + y  
     
-def sub(x, y):  
+def sub(x, y):           #subtracting two values
     return x-y  
     
 add_logger = logger(add)  
