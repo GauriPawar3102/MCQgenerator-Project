@@ -11,8 +11,12 @@ def preprocess(text):
         t = 'http' if t.startswith('http') else t
         new_text.append(t)
     return " ".join(new_text)
+
+#creating model for NLP Tokenizer
 MODEL = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
 tokenizer=AutoTokenizer.from_pretrained(MODEL)
+
+#Configuring the model
 config = AutoConfig.from_pretrained(MODEL)
 # PT
 model = AutoModelForSequenceClassification.from_pretrained(MODEL)
@@ -32,6 +36,9 @@ scores = softmax(scores)
 # scores = output[0][0].numpy()
 # scores = softmax(scores)
 # Print labels and scores
+
+
+#Ranking of the scores going for 4 rounds
 ranking = np.argsort(scores)
 ranking = ranking[::-1]
 for i in range(scores.shape[0]):
@@ -39,7 +46,7 @@ for i in range(scores.shape[0]):
     s = scores[ranking[i]]
     print(f"{i+1}) {1} {np.round(float(s),4)}")
 
-
+#use of trainer variable to store all training data 
 trainer=Trainer(
     model=None,
     args=Training_args,
