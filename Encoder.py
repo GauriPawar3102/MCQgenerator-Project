@@ -37,7 +37,13 @@ from django.db import migrations
 class Migration(migrations.Migration):
     atomic = False
 
-
+def error_view(r=HTML.request, e=HTML.exeption):
+    defaults.page_not_found(r, e, template_name='404.html')
+    if(defaults.page_not_found(r, e, template_name='404.html')==true):
+        print("PAGE NOT FOUND")
+        print("YOU MIGHT HAVE ENTERED WRONG URL")
+    if(DEBUG==true):
+        print("TRACEBACK ERROR", django.
 
 
 
