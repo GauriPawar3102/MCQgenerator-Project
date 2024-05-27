@@ -39,15 +39,44 @@ class Migration(migrations.Migration):
 
 def error_view(r=HTML.request, e=HTML.exeption):
     defaults.page_not_found(r, e, template_name='404.html')
-    if(defaults.page_not_found(r, e, template_name='404.html')==true):
+    if(defaults.page_not_found(r, e, template_name='404.html')==True):
         print("PAGE NOT FOUND")
         print("YOU MIGHT HAVE ENTERED WRONG URL")
-    if(DEBUG==true):
-        print("TRACEBACK ERROR", django.
+class ExceptionLoggingMiddleware(object):
+    def process_exception(self, request, exception):
+        import traceback
+        print traceback.format_exc()
+        except Exception,e:
+        # Get line
+        trace=traceback.extract_tb(sys.exc_info()[0])
+        # Add the event to the log
+        output ="Error in the server: %s.\n" % (e)
+        output+="\tTraceback is:\n"
+        for (file,ln=linenumber,a=affected,l=line)  in trace:
+            output+="\t> Error at function %s\n" % (a)
+            output+="\t  At: %s:%s\n" % (file,ln)
+            output+="\t  Source: %s\n" % (l)
+        output+="\t> Exception: %s\n" % (e)
+
+
+def show_error():
+    import exception as e
+    from django.core.exceptions import ObjectDoesNotExist
+    if(django_error_HTML==True):
+        try:
+            e1=e.exception_server_HTML
+    	except ObjectDoesNotExist:
+       		print("Object does not exist")
+
+
+
+    
+           
+        
 
 
 
 
 
 
-#file has been successfully updated
+
