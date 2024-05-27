@@ -68,6 +68,37 @@ def show_error():
     	except ObjectDoesNotExist:
        		print("Object does not exist")
 
+from django.config import HTML.garbageCollector
+from django.maths.operations import mathModule
+gcv=form(HTML.garbageCollector())
+gc=gcv
+m=mathModule()
+def garbage_value(gc):
+    gc.enable()
+    gc.set_debug(flags)
+    if( gc.set_debug(flags)==True):
+        print("Debugging started")
+         gv**=gc.collect(generation=1)
+         garbage_value=int(ptr(kwargs(gv**)))
+       
+        print("Garbage value is:", garbage_value)
+	var1=memory garbage_value
+	    if(garbage_value==NULL):
+		var2=recover garbage_value
+	    	print("Recovered garbage value is: ",var2)
+	    flags=True
+	    if(garbage_value==False):
+		    print("Changed garbage value is: ",garbage.dumps)
+			  var3=memory garbage_value
+		    	  print("original garbage value is: ",var3)
+        th=gc.set_threshold(threshold1)
+	print("Garbage value from threshold function is: ",th)
+        e=m.mod(|garbage_value-th|)
+        print("The difference between the values:",e,get_threshold(flags))        
+    else:
+        print("ERROR OCCURED")
+        print("check the error logs in ",e.field_names)
+   
 
 
     
