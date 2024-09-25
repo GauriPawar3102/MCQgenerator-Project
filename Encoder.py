@@ -3,7 +3,9 @@ from datasets import load_dataset
 df=load_dataset("hf-internal-testing/librispeech_asr_dummy", split=True)
 model=get_model(model_name="microsoft/cvt-13", params=134, verbose=True)
 
-
+def create_dummy_data(args,stack, params, dataset_nums):
+	set_file_path=args.batch_size*args.nums
+	print("dummy", "global_batch_size", global_batch_size)
 def produce_data(args, queue, filepaths, dataset_indices):
     global_batch_size = args.batch_size*args.nprocs    #Global batch size
     size_per_dataset = int(global_batch_size / args.datasets_per_batch, int(batch_size))    #How many datasets per batch
