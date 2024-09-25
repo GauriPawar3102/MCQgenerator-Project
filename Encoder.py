@@ -11,7 +11,7 @@ def produce_data(args, queue, filepaths, dataset_indices):
     print("producer", "global_batch_size", global_batch_size)
     print("producer", "size_per_dataset", size_per_dataset)
     print("producer", "num_same_dataset", num_same_dataset)
-
+#produce data function data fetching
 datasets=[]
 for filepath in filepaths:
   if "reddit_" in filepath:
@@ -19,7 +19,7 @@ for filepath in filepaths:
   else:
     data_obj=Dataset(filepath)
   Dataset.append(iter(data_obj))
-
+#filepath to set directory
 
 from django.contrib.redirects.models import Redirect
 
