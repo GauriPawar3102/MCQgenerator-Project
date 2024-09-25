@@ -29,4 +29,11 @@
   "position_embedding_type": "absolute",
   "type_vocab_size": 2,
   "vocab_size": 30522
-}
+},
+  "initializer_range": 0.02,
+    "intermediate_size": 3072,
+    "label2id": {
+      "positive": 1,
+      "negative": -1,
+      "neutral": 0
+  }
