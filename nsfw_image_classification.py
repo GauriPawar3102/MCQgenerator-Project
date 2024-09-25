@@ -22,5 +22,5 @@ with torch.no_grad():
 predicted_label = logits.argmax(-1).item()
 model.config.id2label[predicted_label]
 
-
+#file should not stuck anywhere as it causes loss of data
 #file has been successfully updated
