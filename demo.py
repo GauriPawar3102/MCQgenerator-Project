@@ -28,7 +28,10 @@ add_logger(4, 5)
 sub_logger(10, 5)  
 sub_logger(20, 10)  
 
-
+#sidebar opens a jar that logs in desired location. level
+#In marketing we need templates for forecasting
 #This is the python program for functions inside function
-
+#generic one is used for templates
+#specify how many rows are needed in the spreadsheet
+#overriding is not allowed in templates
 #File has been successfully updated
