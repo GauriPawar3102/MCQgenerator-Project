@@ -28,14 +28,14 @@ output = model(**encoded_input)
 scores = output[0][0].detach().numpy()
 scores = softmax(scores)
 # # TF
-# model = TFAutoModelForSequenceClassification.from_pretrained(MODEL)
-# model.save_pretrained(MODEL)
-# text = "Covid cases are increasing fast!"
-# encoded_input = tokenizer(text, return_tensors='tf')
-# output = model(encoded_input)
-# scores = output[0][0].numpy()
-# scores = softmax(scores)
-# Print labels and scores
+ model = TFAutoModelForSequenceClassification.from_pretrained(MODEL)
+ model.save_pretrained(MODEL)
+ text = "Covid cases are increasing fast!"
+ encoded_input = tokenizer(text, return_tensors='tf')
+ output = model(encoded_input)
+ scores = output[0][0].numpy()
+ scores = softmax(scores)
+ Print labels and scores
 
 
 #Ranking of the scores going for 4 rounds
