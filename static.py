@@ -21,5 +21,17 @@ if(date.getDate() == dateFromDB.getDate()):
 else:
     print("Unequal")
 
+switch(dates)
+{
+    case 1: "undefined";
+        print("Expiry Date")
+    case 2: "Timeline_date_fetch";
+        print("Current date is)
+    case 3: NULL
+        print(Void date)
+    default:
+        print("bad error")
+    
 
+#Code for the date has been added
 #file has been successfully updated
