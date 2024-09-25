@@ -14,7 +14,11 @@
                         "para": "A meta-markup language, used to create markup languages such as DocBook.",
 						"GlossSeeAlso": ["GML", "XML"]
                     },
-					"GlossSee": "markup"
+					"GlossSee": "markup",
+					"Size": "L-1",
+					"Beep": ["1D", "2D", "3D"],
+					"View": "enlarge-up",
+					"License": "for accessing the data from DocBook-Revoking the roles that are no longer required"
                 }
             }
         }
