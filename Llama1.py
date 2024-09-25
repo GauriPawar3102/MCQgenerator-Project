@@ -209,6 +209,14 @@ class article(models.Model):
   headline=models.charField(max_length=200)
   sites=models.ManyToManyField(Site)
 
+from django.contrib.bars.models import bar1
+from django.plots import plt
+
+class header(header.H):
+  header=bars.bar1.toUppercase(text)
+  footer=bars.bar1.toLowercase(text)
+  set(header,footer)
+
 
 
 
